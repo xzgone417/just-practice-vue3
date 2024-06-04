@@ -1,0 +1,50 @@
+.tabbar {
+    width: 375px;
+    height: 60px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    padding: 20px 0 10px 0;
+    box-shadow: #ccc 0 0 5px 0;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+
+    .bar {
+        flex: 2;
+        text-align: center;
+        position: relative;
+        color: #000;
+
+        &.active {
+            font-weight: 600;
+            font-size: 18px;
+
+            &::after {
+                content: "";
+                width: 60px;
+                height: 4px;
+                position: absolute;
+                bottom: -5px;
+                left: 20px;
+                background-color: orange;
+                border-radius: 4px;
+            }
+        }
+
+    }
+
+
+
+    .icon {
+        flex: 1;
+        font-size: 22px;
+        padding: 0 15px;
+    }
+}
+
+.box {
+    height: 60px;
+}

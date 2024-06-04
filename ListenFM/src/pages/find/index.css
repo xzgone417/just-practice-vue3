@@ -1,0 +1,107 @@
+.find {
+  background-color: #f2f1f1;
+  width: 375px;
+}
+.find .classify {
+  background-color: #fff;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.find .classify .grid {
+  margin: 10px 10px 0 10px;
+  box-shadow: #eee 2px 2px 2px 2px;
+  border-radius: 4px;
+  padding: 5px;
+}
+.find .classify .grid .item {
+  text-align: center;
+}
+.find .classify .grid .item .icon {
+  font-size: 26px;
+}
+.find .classify .grid .item .title {
+  font-size: 14px;
+}
+.find .tit {
+  padding: 10px 0 0 10px;
+  font-size: 16px;
+  background-color: #fff;
+  font-weight: 600;
+}
+.find .moredt {
+  display: flex;
+  overflow: scroll;
+  background-color: #fff;
+  padding: 4px 0;
+  margin-bottom: 10px;
+}
+.find .moredt .item {
+  flex-shrink: 0;
+  width: 80px;
+  height: 120px;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: #eee 2px 2px 2px 2px;
+}
+.find .moredt .item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.find .moredt .item .title {
+  padding-top: 20px;
+  font-size: 10px;
+}
+.find .tj {
+  background-color: #fff;
+  width: 375px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.find .tj .head {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.find .tj .head .title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.find .tj .head .more {
+  font-size: 12px;
+  color: #666;
+}
+.find .tj .list {
+  width: 100%;
+  overflow: auto;
+}
+.find .tj .list .content {
+  display: flex;
+}
+.find .tj .list .content div {
+  margin: 0 5px;
+}
+.find .tj .list .content div .cover {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.find .tj .list .content div .cover img {
+  width: auto;
+  height: 100px;
+}
+.find .tj .list .content div .speak {
+  color: #666;
+}
+.find .tj .list .content div .dttit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}

@@ -1,0 +1,271 @@
+{{extend './layout/layout.html'}}
+
+{{block "head"}}
+<link
+rel="stylesheet"
+href="../public/css/xzg/index.css";
+media="only screen and (min-width: 750px)";
+/>
+<link
+rel="stylesheet"
+href="../public/css/xzg/index750.css"
+media="only screen and (max-width: 750px)";
+/>
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/animate.css/3.7.2/animate.css" />
+<script src="https://www.delac.io/WOW/dist/wow.min.js"></script>
+<script src="../public/js/flexible.js"></script>
+{{/block}}
+
+{{block "content"}}
+   <!-- 头部大图片 -->
+   <section class="Pagehead">
+    <div class="pageheadbody">
+      <div class="Pagehead750">
+      <h1 class="wow fadeInDown"><img src="../public/img/index/pirox2.svg" alt="" /></h1>     
+      <h2 class="wow fadeInUp">有方派诺克斯</h2>
+        <p class="wow fadeInUp">首款双源大视野CBCT</p>
+      </div>
+      <a href="/pirox" style="text-decoration: none">
+        <div class="yuanjiao wow fadeInUp">
+          了解更多<span class="glyphicon glyphicon-menu-right"></span>
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- /* 三联 */ -->
+  <section class="Three">
+    <div class="threebody">
+      <ul>
+        <li class="Three1 biggerbox">
+          <a href="/Dubhewer">
+            <img src="../public/img/index/dubhewer.png" alt="" />
+            <div class="threepages">
+              <p class="subtitle">Dubhewer</p>
+              <p class="txt">专业智能的CBCT图像管理软件</p>
+            </div>
+          </a>
+        </li>
+        <li class="Three2 biggerbox">
+          <a href="/autodon">
+            <img src="../public/img/index/autudon.png" alt="" />
+            <div class="threepages">
+              <p class="subtitle">Autodon</p>
+              <p class="txt">专业智能的齿科正畸软件</p>
+            </div>
+          </a>
+        </li>
+        <li class="Three3 biggerbox">
+          <a href="/technology">
+            <img src="../public/img/index/innovation.jpg" alt="" />
+            <div class="threepages">
+              <p class="subtitle">技术与创新</p>
+              <p class="txt">成就新一代的专科CT</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--     /* hover矩阵 */ -->
+  <section class="matrix">
+    <div class="matrixbody">
+      <div class="H1Z1 xzgrun wow fadeInUp"><span>有方专科CT产品矩阵</span></div>
+      <div class="H2Z2 xzgrun wow fadeInUp"><span>功能多变，普惠质优</span></div>
+      <div class="CTmain">
+        <div class="CTleft">
+          <div class="leftCT1 leftCT thebox1 whiteback active1">
+            <p class="HL1">口腔颌面CT</p>
+            <p class="HP1">可对头颅骨组织、下颌关 节情况进行更准确评价。</p>
+            <img src="../public/img/index/mouthCT.jpg" alt="" />
+          </div>
+          <div class="leftCT2 leftCT thebox2 whiteback">
+            <p class="HL1">C型臂CT</p>
+            <p class="HP1">用于微创手术中的 图像引导，提高手术的精确度。</p>
+            <img src="../public/img/index/armCT.jpg" alt="" />
+          </div>
+          <div class="leftCTi3 leftCT thebox3 whiteback">
+            <p class="HL1">脑部CT</p>
+            <p class="HP1">对脑部疾病诊断准确，并 有助于确定治疗方案</p>
+            <img src="../public/img/index/brainCT.jpg" alt="" />
+          </div>
+          <div class="leftCT leftCT4 thebox4 whiteback">
+            <p class="HL1">乳腺CT</p>
+            <p class="HP1">极大提高乳腺癌早期筛查 准确度。</p>
+            <img src="../public/img/index/milkCT.jpg" alt="" />
+          </div>
+          <div class="leftCT leftCT5 thebox5 whiteback">
+            <p class="HL1">移动CT</p>
+            <p class="HP1">用于急诊室等科室的辅助 诊断，灵活轻便。</p>
+            <img src="../public/img/index/moveCT.jpg" alt="" />
+          </div>
+          <div class="leftCT leftCT6 thebox6 whiteback">
+            <p class="HL1">放疗辅助CT</p>
+            <p class="HP1">可以反映肿瘤的代谢情 况，使放疗更加精准。</p>
+            <img src="../public/img/index/helpCy.jpg" alt="" />
+          </div>
+          <div class="leftCT leftCT7 thebox7 whiteback">
+            <p class="HL1">车载CT</p>
+            <p class="HP1">让CT诊疗服务更加灵活、 多元化。</p>
+            <img src="../public/img/index/carCT.jpg" alt="" />
+          </div>
+        </div>
+        <div class="CTright">
+          <ul>
+            <li class="bluebox1 active">
+              <p class="righttxt">口腔颌面CT</p>
+              <img
+                src="../public/img/index/mouthCt.svg"
+                alt=""
+                class="blacksvg thebox1 whiteback"
+              />
+            </li>
+            <li class="bluebox2">
+              <p class="righttxt">C型臂CT</p>
+              <img
+                src="../public/img/index/armCt.svg"
+                alt=""
+                class="blacksvg thebox2 whiteback"
+              />
+            </li>
+            <li class="bluebox3">
+              <p class="righttxt">脑部CT</p>
+              <img
+                src="../public/img/index/brainCt.svg"
+                alt=""
+                class="blacksvg thebox3 whiteback"
+              />
+            </li>
+            <li class="bluebox4">
+              <p class="righttxt">乳腺CT</p>
+              <img
+                src="../public/img/index/milkCt.svg"
+                alt=""
+                class="blacksvg thebox4 whiteback"
+              />
+            </li>
+            <li class="bluebox5">
+              <p class="righttxt">移动CT</p>
+              <img
+                src="../public/img/index/moveCt.svg"
+                alt=""
+                class="blacksvg thebox5 whiteback"
+              />
+            </li>
+            <li class="bluebox6">
+              <p class="righttxt">放疗辅助CT</p>
+              <img
+                src="../public/img/index/helpCt.svg"
+                alt=""
+                class="blacksvg thebox6 whiteback"
+              />
+            </li>
+            <li class="bluebox7">
+              <p class="righttxt">车载CT</p>
+              <img
+                src="../public/img/index/carCt.svg"
+                alt=""
+                class="blacksvg thebox7 whiteback"
+              />
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 按钮 -->
+      <div class="walkline">
+        <button class="walk xzgrun wow fadeInUp">
+          <a href="/about">
+            <p>
+              走进有方<span class="glyphicon glyphicon-menu-right"></span>
+            </p>
+          </a>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!--     /* 更多精彩 */ -->
+  <section class="More">
+    <div class="morebody">
+      <div class="H1Z1 xzgrun"><span>更多精彩</span></div>
+      <div class="H2Z2 xzgrun"><span>探索有方，由此开始</span></div>
+      <div class="moremain">
+        <div class="moreleft">
+          <div class="moreexhibition xzgrun biggerbox wow fadeInUp">
+            <a href="/exhibition">
+              <img src="../public/img/index/exhibition.jpg" alt="" />
+              <p>展会信息</p>
+            </a>
+          </div>
+          <div class="moresupport xzgrun biggerbox wow fadeInUp">
+            <a href="/support">
+              <img src="../public/img/index/support.jpg" alt="" />
+              <p>服务与支持</p>
+            </a>
+          </div>
+        </div>
+        <div class="moremiddle">
+          <div class="moreabout xzgrun biggerbox wow fadeInUp">
+            <a href="/about">
+              <img src="../public/img/index/aboutUs.png" alt="" />
+              <p>关于有方</p>
+            </a>
+          </div>
+          <div class="morecases xzgrun biggerbox wow fadeInUp">
+            <a href="/cases?bzlist=kouqiangzhengji">
+              <img src="../public/img/index/cases.png" alt="" />
+              <p>临床案例</p>
+            </a>
+          </div>
+        </div>
+        <div class="moreright">
+          <div class="morejoinus xzgrun biggerbox wow fadeInUp">
+            <a href="/joinus">
+              <img src="../public/img/index/joinus.png" alt="" />
+              <p>加入有方</p>
+            </a>
+          </div>
+          <div class="morenews xzgrun biggerbox wow fadeInUp">
+            <a href="/news">
+              <img src="../public/img/index/news.png" alt="" />
+              <p>咨询中心</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- anniu -->
+      <div class="contactline">
+        <button class="contact xzgrun wow fadeInUp">
+          <a href="/contact">
+            <div>
+              联系我们<span class="glyphicon glyphicon-menu-right"></span>
+            </div>
+          </a>
+        </button>
+      </div>
+    </div>
+  </section>
+{{/block}}
+
+
+{{block "script"}}
+<script>
+  // 悬浮换图
+  for (let i = 1; i < 8; i++) {
+    $(".bluebox" + i).mouseover(function () {
+      $(".whiteback").removeClass("active1");
+      $(".thebox" + i).addClass("active1");
+      $(".bluebox" + i)
+        .siblings("li")
+        .removeClass("active");
+      $(".bluebox" + i).addClass("active");
+    });
+  }
+</script>
+<!-- 动画 -->
+<script>
+  new WOW().init();
+</script>
+<script>
+  $("#naver").addClass("wow fadeOut");
+</script>
+{{/block}}

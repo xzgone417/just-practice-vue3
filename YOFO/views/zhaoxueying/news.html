@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>有方医疗_派CT_口腔诊所引流利器</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../zhaocss/news.css">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* 导航条 */
+
+
+/* .yf_navbar_box {
+    height: 80px;
+    position: relative;
+    border-color: #e7e7e7;
+}
+
+.yf_navbar_box.affix {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#naver {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+}
+
+
+/* body {
+              margin-top: 40px;
+          } */
+
+nav,
+.navbar .container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    padding: 0;
+}
+
+.navbar-brand img {
+    position: relative;
+    margin-left: 20px !important;
+}
+
+
+/* .navbar .container {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0;
+        padding: 0;
+  
+      }
+  
+      .yf_navbar {
+        visibility: hidden;
+      }
+  
+      .navbar-brand img {
+        position: relative;
+        margin-left: 20px !important;
+      } */
+
+.yf_navbar {
+    /* background-color: transparent;
+              border-color: #e7e7e7;
+              height: 80px; */
+    height: 80px;
+    border: 0;
+    background-color: #fff;
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 98;
+    padding-left: 60px;
+}
+
+#bs-example-navbar-collapse-1 {
+    background-color: #fff;
+}
+
+.yf_navbar .navbar-brand {
+    color: #777;
+    height: 80px;
+    line-height: 80px;
+}
+
+.yf_navbar .navbar-brand:hover,
+.yf_navbar .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+
+.yf_navbar .navbar-text {
+    color: #777;
+}
+
+.yf_navbar .navbar-nav>li>a {
+    color: #777;
+    height: 80px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 1000;
+    color: #262626;
+    /* padding: 0; */
+    /* padding: 5px; */
+    padding: 15px 5px;
+}
+
+.yf_navbar .navbar-nav>li>a:hover,
+.yf_navbar .navbar-nav>li>a:focus {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 3px solid blue;
+}
+
+.yf_navbar .navbar-nav>.active>a,
+.yf_navbar .navbar-nav>.active>a:hover,
+.yf_navbar .navbar-nav>.active>a:focus {
+    color: #555;
+    /* active当前激活的样式 */
+    /* background-color: #e7e7e7; */
+    border-bottom: 3px solid red;
+}
+
+.yf_navbar .navbar-nav>.disabled>a,
+.yf_navbar .navbar-nav>.disabled>a:hover,
+.yf_navbar .navbar-nav>.disabled>a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+
+.yf_navbar .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 25px;
+}
+
+.yf_navbar .navbar-toggle:hover,
+.yf_navbar .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+.yf_navbar .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.yf_navbar .navbar-collapse,
+.yf_navbar .navbar-form {
+    border-color: #e7e7e7;
+}
+
+.yf_navbar .navbar-nav>.open>a,
+.yf_navbar .navbar-nav>.open>a:hover,
+.yf_navbar .navbar-nav>.open>a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+@media (max-width: 767px) {
+    .yf_navbar .navbar-nav .open .dropdown-menu>li>a {
+        color: #777;
+    }
+    .yf_navbar .navbar-nav .open .dropdown-menu>li>a:hover,
+    .yf_navbar .navbar-nav .open .dropdown-menu>li>a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .yf_navbar .navbar-nav .open .dropdown-menu>.active>a,
+    .yf_navbar .navbar-nav .open .dropdown-menu>.active>a:hover,
+    .yf_navbar .navbar-nav .open .dropdown-menu>.active>a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .yf_navbar .navbar-nav .open .dropdown-menu>.disabled>a,
+    .yf_navbar .navbar-nav .open .dropdown-menu>.disabled>a:hover,
+    .yf_navbar .navbar-nav .open .dropdown-menu>.disabled>a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+
+.yf_navbar .navbar-link {
+    color: #777;
+}
+
+.yf_navbar .navbar-link:hover {
+    color: #333;
+}
+
+.yf_navbar .btn-link {
+    color: #777;
+}
+
+.yf_navbar .btn-link:hover,
+.yf_navbar .btn-link:focus {
+    color: #333;
+}
+
+.yf_navbar .btn-link[disabled]:hover,
+fieldset[disabled] .yf_navbar .btn-link:hover,
+.yf_navbar .btn-link[disabled]:focus,
+fieldset[disabled] .yf_navbar .btn-link:focus {
+    color: #ccc;
+}
+
+
+/* 字体图标 */
+
+.iconfont {
+    font-size: 16px !important;
+    font-weight: 700;
+    color: #262626 !important;
+}
+
+.navbar-brand {
+    position: relative;
+}
+
+.navbar-brand>img {
+    width: 106px;
+    height: 28px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50%;
+    margin-top: -50%;
+}
+
+
+/* 导航条下拉框 */
+
+.dropdown .dropdown-menu {
+    display: none;
+    width: 150px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    width: 100px;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-menu>li>a {
+    display: block;
+    line-height: 48px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.container-fluid {
+    background: rgb(38, 38, 38);
+    padding-top: 95px;
+    color: rgb(255, 255, 255);
+}
+
+.footnav ul li {
+    list-style: none;
+    float: left;
+    width: 16.5%;
+}
+
+.footnav ul li h6 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 20px;
+    /* width: 80px; */
+}
+
+.footnav ul li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    line-height: 1.2;
+    opacity: 0.8;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.footnav .footer-qr li>h6 {
+    width: 80px;
+}
+
+
+/* 底部信息栏 */
+
+.footnav .footer-copyright {
+    margin-top: 120px;
+    border-top: 1px solid rgb(58, 58, 58);
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: block;
+}
+
+.footnav .right {
+    float: right;
+    /* display: none; */
+    list-style: none;
+}
+
+.footnav .footLogo img {
+    width: 101px;
+    height: 27px;
+}
+
+.footnav a {
+    text-decoration: none;
+}
+
+.footnav a:hover {
+    color: #095bfb;
+}
+
+*/
+/* -------------- */
+
+body {
+    font: 14px / 1.5 "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", "Open Sans", Arial, "Hiragino Sans GB", 微软雅黑, STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: rgb(5, 8, 39);
+}
+
+.page-banner {
+    width: 1684px;
+    height: 240px;
+}
+
+
+/* bg-light news-wrap样式 */
+
+.page-banner .wrap {
+    width: 1200px;
+    height: 158px;
+    margin: 0px 242px;
+    color: red;
+}
+
+.page-banner .wrap .page-banner_inner {
+    width: 1180px;
+    height: 62px;
+}
+
+.pt96 {
+    padding-top: 96px;
+}
+
+.pl20 {
+    padding-left: 20px;
+}
+
+.ft-white {
+    color: white;
+}
+
+.page-banner .wrap .page-banner_inner .ft42 ft-blod {
+    width: 1180px;
+    height: 62px;
+    margin: 0px;
+}
+
+.ft42 {
+    font-size: 42px;
+}
+
+.ft-bold {
+    font-weight: 700;
+}
+
+.ml40 {
+    margin-left: 40px;
+}
+
+.bg-light {
+    background-color: rgb(247, 248, 250);
+}
+
+
+/* 这里之前错了 */
+
+.bg-light .news-wrap {
+    width: 1084px;
+    height: 3347px;
+    padding: 30px 20px 50px 20px;
+}
+
+.pd50 {
+    padding-bottom: 50px;
+}
+
+.pt30 {
+    padding-top: 30px;
+}
+
+.wrap {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0px 242px;
+}
+
+
+/* 新闻菜单 */
+
+.news-list {
+    width: 1200px;
+    height: 3267px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.news-list .ui,
+li {
+    list-style: none;
+    border-radius: 2px;
+    padding: 32px;
+    margin-bottom: 24px;
+    background-color: white;
+    /* height: 3267px; */
+    overflow: hidden;
+    height: 254px;
+}
+
+
+/* 新闻 */
+
+#post-437 {
+    overflow: hidden;
+}
+
+.news-list li .news-thumb {
+    width: 44%;
+    height: 224px;
+    border-radius: 8px;
+    background-size: cover;
+    display: inline-block;
+    background-position: 50%;
+    /* background-color: red; */
+    float: left;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.news-list li .news-desc-warp {
+    box-sizing: border-box;
+    font-size: 14px;
+    padding-left: 50px;
+    width: 66%;
+    height: 224px;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: yellow;
+    /* float: left; */
+    /* width: 400px;
+    height: 224px;
+  
+    background-color: red;
+    float: left; */
+}
+
+
+/* .inline-block {
+    display: inline-block;
+} */
+
+
+/* 企业专访样式 */
+
+.news-target span {
+    border: 1px solid #999;
+    border-radius: 32px;
+    background: #fff;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar yf_navbar clearfix">
+        <div class="container">
+
+
+
+            <!-- meau -->
+            <button class="menu-btn hide">
+                <span class="menu-btn-line"></span>
+            </button>
+        </div>
+        </div>
+        <div class="page-banner mini-page-banner" style=" background-image: url(../../public/img/newsCenter/exhibition/exhibition-main.jpg)">
+            <div class="wrap">
+                <div class="page-banner__inner ft-white pl20 pt96">
+                    <h3 class="ft42 ft-bold">
+                        <a href="/news" class="ft-white">新闻动态</a>
+                        <a href="/exhibition" class="ft-white opacity3 ml40">展会信息</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <!--  -->
+        <div class="bg-light news-wrap">
+            <div class="wrap pt30 pb50">
+                <ul class="news-cat li-left hide">
+                    <li><a href="/news">全部新闻</a></li>
+                    <li class="cat-item cat-item-4"><a href="https://www.yofomedical.com/category/news/product">产品介绍</a>
+                    </li>
+                    <li class="cat-item cat-item-5"><a href="https://www.yofomedical.com/category/news/brand">品牌动态</a>
+                    </li>
+                    <li class="cat-item cat-item-6"><a href="https://www.yofomedical.com/category/news/industry">行业资讯</a>
+                    </li>
+                </ul>
+                <!-- <ul class="news-cat li-left">
+			<li class="active">
+				<a href="">全部新闻</a>
+			</li>
+			<li>
+				<a href="">品牌动态</a>
+			</li>
+			<li>
+				<a href="">产品介绍</a>
+			</li>
+			<li>
+				<a href="">行业资讯</a>
+			</li>
+		</ul> -->
+                <ul class="news-list">
+                    <!-- 新闻1 -->
+                    <li id="post-437">
+                        <a class="news-thumb inline-block middle" style="background-image: url(../../public/img/newsCenter/news/newsphoto1.jpg);" href="/news/437.html" title="查看与精英同行，创口腔未来！——鼎植医生集团专访详细内容"></a>
+                        <div class="news-desc-wrap inline-block middle">
+                            <h6 class="ft24 ft-bold mb15 over-doit line10">
+                                <a href="/news/437.html" title="与精英同行，创口腔未来！——鼎植医生集团专访"> 与精英同行，创口腔未来！——鼎植医生集团专访</a>
+                            </h6>
+                            <p class="news-tags">
+                                <span>
+                                    <a href="http://127.0.0.1:5500/YOFO/views/zhaoxueying/437.html"
+                                        rel="tag">企业专访
+                                </a>
+                                </span>
+                            </p>
+
+                            <p class="opacity5 news-desc">
+
+                                为助力合作伙伴品牌宣传，促进企业之间的合作发展，有方开设全新专访栏目，每期邀请合作伙伴口腔机构接受访谈，旨在深入了解企业文化定位，挖掘企业所需资源支持，促进与企业的长期发展合作。 本期，我们特邀荣登览牙“中国口腔企业榜”榜首的鼎植医生集团接受企业专访，有方与鼎植医生集团于2021年达成战略合作关系，未来两年，鼎植的C...... </p>
+                            <p class="opacity3 news-date">
+                                2022年03月03日 </p>
+                        </div>
+                    </li>
+
+
+
+
+
+                    <!-- 新闻2 -->
+                    <li id="post-386">
+                        <a class="news-thumb inline-block middle" style="background-image: url(../../public/img/newsCenter/news/news\ photo1.1.jpg);" href="/news/437.html" title="查看有方头条 | 有方医疗喜获两项目立项！详细内容"></a>
+                        <div class="news-desc-wrap inline-block middle">
+                            <h6 class="ft24 ft-bold mb15 over-doit line10">
+                                <a href="/news/437.html" title="有方头条 | 有方医疗喜获两项目立项！">    有方头条
+                                    |
+                                    有方医疗喜获两项目立项！</a>
+                            </h6>
+                            <p class="news-tags"><span><a
+                                        href="http://127.0.0.1:5500/YOFO/zhaoxueying/qiyezhuafang.html"
+                                        rel="tag">新闻要闻</a></span><span><a
+                                        href="http://127.0.0.1:5500/YOFO/zhaoxueying/qiyezhuafang.html"
+                                        rel="tag">有方头条</a></span>
+                            </p>
+                            <p class="opacity5 news-desc">
+
+
+                                近日，有方医疗喜获安徽省发改委《支持现代医疗和医药产业发展若干政策2021年度项目》和合肥市科技局《2021年合肥市关键共性技术研发和重大科技成果工程化项目》两项目立项！ ————————————————————————————————————————— 这两个项目的立项肯定了有方医疗在关键共性技术研发以...... </p>
+                            <p class="opacity3 news-date">
+                                2021年12月08日 </p>
+                        </div>
+                    </li>
+
+                    <!-- 新闻3 -->
+                    <li id="post-374">
+                        <a class="news-thumb inline-block middle" style="background-image: url(../../public/img/newsCenter/news/news\ photo1.2.jpg);" href="/news/437.html" title="查看战略合作 | 有方医疗与中国体视学学会智能成像分会达成合作详细内容"></a>
+                        <div class="news-desc-wrap inline-block middle">
+                            <h6 class="ft24 ft-bold mb15 over-doit line10">
+                                <a href="/news/437.html" title="战略合作 | 有方医疗与中国体视学学会智能成像分会达成合作">
+                                    战略合作 | 有方医疗与中国体视学学会智能成像分会达成合作</a>
+                            </h6>
+                            <p class="news-tags"><span><a
+                                        href="http://127.0.0.1:5500/YOFO/zhaoxueying/qiyezhuafang.html"
+                                        rel="tag">战略合作</a></span></p>
+                            <p class="opacity5 news-desc">
+                                智能成像分会主任委员牟轩沁出席了本次论坛并作出指导，受邀参加论坛的评委组专家有：中国科学技术大学、有方医疗创始人朱磊博士，浙江大学刘华峰博士，南昌大学刘且根博士，西安电子科技大学袁景博士。 2020年8月8日成立的中国体视学学会智能成像分会（Intelligent Imaging Branch Society, IIB...... </p>
+                            <p class="opacity3 news-date">
+                                2021年11月15日 </p>
+                        </div>
+                    </li>
+                    <!-- 4 -->
+                    <li id="post-361">
+                        <a class="news-thumb inline-block middle" style="background-image: url(../../public/img/newsCenter/news/news\ photo4.png);" href="/news/437.html" title="查看有方头条 | 派CT参展2021DTC 黑科技实力受瞩目详细内容"></a>
+                        <div class="news-desc-wrap inline-block middle">
+                            <h6 class="ft24 ft-bold mb15 over-doit line10">
+                                <a href="/news/437.html" title="有方头条 | 派CT参展2021DTC 黑科技实力受瞩目">有方头条 | 派CT参展2021DTC 黑科技实力受瞩目</a></h6>
+                            <p class="news-tags"><span><a href="http://127.0.0.1:5500/YOFO/zhaoxueying/qiyezhuafang.html"
+                                        rel="tag">2021DTC</a></span>
+                                <a href="http://127.0.0.1:5500/YOFO/zhaoxueying/qiyezhuafang.html" rel="tag">实力受瞩目</a></span>
+                            </p>
+                            <p class="opacity5 news-desc">
+                                为期四天的中国国际口腔展DenTech China 2021在上海世博展览馆完美收官。来自国内外近500家参展企业汇聚一堂，有方派CT作为全能型高端选手，以其高颜值、更优性能兼具更高效的操作性，备受关注和认可。 本次展会有方医疗带来了全球尖端技术成果—派CT。派CT未来科技感的外观设计吸引了很多专业观众围观，但派CT不...... </p>
+                            <p class="opacity3 news-date">
+                                2021年11月12日 </p>
+                        </div>
+                    </li>
+                    <!-- 5 -->
+                    <li id="post-345">
+                        <a class="news-thumb inline-block middle" style="background-image: url(../../public/img/newsCenter/news/news\ photo1.4.jpg);" href="/news/437.html" title="查看民族之光 路在脚下 | 有方医疗凭借全新大视野“派CT”行稳高端之路详细内容"></a>
+                        <div class="news-desc-wrap inline-block middle">
+                            <h6 class="ft24 ft-bold mb15 over-doit line10">
+                                <a href="/news/437.html" title="民族之光 路在脚下 | 有方医疗凭借全新大视野“派CT”行稳高端之路">民族之光 路在脚下 | 有方医疗凭借全新大视野“派CT”行稳高端之路</a>
+                            </h6>
+                            <p class="news-tags"><span>
+                                <a href="http://127.0.0.1:5500/YOFO/zhaoxueying/qiyezhuafang.html"
+                                        rel="tag">民族之光</a></span><span><a href="http://127.0.0.1:5500/YOFO/zhaoxueying/qiyezhuafang.html"
+                                        rel="tag">派CT</a></span></p>
+                            <p class="opacity5 news-desc">
+                                以下文章来源于中国医学论坛报今日口腔 ，作者今日口腔 如今，数字化和智能化的浪潮正以前所未有的冲击力涌入大数据背景下的口腔医疗时代，影像学作为疾病诊断的“基石”和“灯塔”，影像设备在各级医疗机构中都是必备品。随着国内口腔行业的快速发展，医院科室规模扩大，基层诊所数量扩增，口腔CT需求正呈爆发式增长。然而我国高端口腔CT......
+                            </p>
+                            <p class="opacity3 news-date">
+                                2021年09月24日 </p>
+                        </div>
+                    </li>
+                    <!-- 6 -->
+                    <li id="post-246">
+                        <a class="news-thumb inline-block middle" style="background-image: url(../../public/img/newsCenter/news/news\ photo1.5.jpg);" href="/news/437.html" title="查看四周年，更精彩详细内容"></a>
+                        <div class="news-desc-wrap inline-block middle">
+                            <h6 class="ft24 ft-bold mb15 over-doit line10">
+                                <a href="/news/437.html" title="四周年，更精彩">四周年，更精彩</a>
+                            </h6>
+                            <p class="news-tags"><span><a href="http://127.0.0.1:5500/YOFO/zhaoxueying/qiyezhuafang.html"
+                                        rel="tag">四周年</a></span><span><a
+                                        href="http://127.0.0.1:5500/YOFO/zhaoxueying/qiyezhuafang.html" rel="tag">有方医疗</a></span>
+                            </p>
+                            <p class="opacity5 news-desc">
+                                7月的夏天热情似火，夏天是生命的季节，她让周围的一切变得充满了活力！在这样一个充满活力的季节里，我们举办了有方医疗四周年团建活动！总部员工齐聚六安虚谷温泉度假村，在35摄氏度的高温之下，这是一场对于勇气和意志的磨炼，更是团队协作与集体智慧的实践。直面三伏、奋勇拼搏、突破极限，有方的勇士们，无惧前行！ http://ww...... </p>
+                            <p class="opacity3 news-date">
+                                2021年08月06日 </p>
+                        </div>
+                    </li>
+                    <!-- 7 -->
+                    <li id="post-42">
+                        <a class="news-thumb inline-block middle" style="background-image: url(../../public/img/newsCenter/news/news\ photo1.6.jpg);" href="/news/437.html" title="查看有方医疗高端影像论坛走进武汉详细内容">
+                        </a>
+                        <div class="news-desc-wrap inline-block middle">
+                            <h6 class="ft24 ft-bold mb15 over-doit line10">
+                                <a href="/news/437.html" title="有方医疗高端影像论坛走进武汉">有方医疗高端影像论坛走进武汉</a>
+                            </h6>
+                            <p class="news-tags"><span><a href="http://127.0.0.1:5500/YOFO/zhaoxueying/qiyezhuafang.html"
+                                        rel="tag">医疗行业</a></span><span><a
+                                        href="http://127.0.0.1:5500/YOFO/zhaoxueying/qiyezhuafang.html" rel="tag">行业精准</a></span>
+                            </p>
+                            <p class="opacity5 news-desc">
+                                7月11日，“有方医疗高端影像论坛武汉站”成功举办，此次学术论坛积极响应医生诉求，以“CBCT在口腔医学中的应用”为主题吸引了来自国内多地众多口腔医生的参与。 本次研讨会邀请到了武汉大学口腔医院副院长，中华口腔医学会口腔放射专委会前任主任委员、研究生导师程勇博士；武汉大学口腔医学院正畸教研室主任、正畸一科主任、现任中......
+                            </p>
+                            <p class="opacity3 news-date">
+                                2021年07月13日 </p>
+                        </div>
+                    </li>
+                    <!--  8-->
+                    <li id="post-239">
+                        <a class="news-thumb inline-block middle" style="background-image: url(../../public/img/newsCenter/news/news\ photo1.7.jpg);" href="/news/437.html" title="查看有方PIROX牙科CBCT获中华人民共和国医疗器械注册证详细内容"></a>
+                        <div class="news-desc-wrap inline-block middle">
+                            <h6 class="ft24 ft-bold mb15 over-doit line10">
+                                <a href="/news/437.html" title="有方PIROX牙科CBCT获中华人民共和国医疗器械注册证">有方PIROX牙科CBCT获中华人民共和国医疗器械注册证</a></h6>
+                            <p class="opacity5 news-desc">
+                                经国家药品监督管理局审批，有方医疗自主研发的PIROX派若克斯双源大视野牙科CBCT目前已获得中华人民共和国医疗器械注册证，获准进入市场。 应市场所求，急国家所需，于党百年华诞之际，有方医疗突破关键卡脖子技术壁垒，协力创新，攻坚克难，用国产方案替代并超越进口，一举打破垄断，为经济高质量发展续力，践行初心使命，为建党百......
+                            </p>
+                            <p class="opacity3 news-date">
+                                2021年06月29日 </p>
+                        </div>
+                    </li>
+                    <!-- 9 -->
+                    <li id="post-259">
+                        <a class="news-thumb inline-block middle" style="background-image: url(../../public/img/newsCenter/news/news\ photo5.jpg);" href="/news/437.html" title="查看有方医疗2021中国国际口腔设备材料展览会圆满落幕！详细内容"></a>
+                        <div class="news-desc-wrap inline-block middle">
+                            <h6 class="ft24 ft-bold mb15 over-doit line10">
+                                <a href="/news/437.html" title="有方医疗2021中国国际口腔设备材料展览会圆满落幕！">有方医疗2021中国国际口腔设备材料展览会圆满落幕！</a></h6>
+                            <p class="news-tags"><span><a href="http://127.0.0.1:5500/YOFO/zhaoxueying/qiyezhuafang.html"
+                                        rel="tag">展会</a></span><span><a
+                                        href="http://127.0.0.1:5500/YOFO/zhaoxueying/qiyezhuafang.html" rel="tag">有方医疗</a></span>
+                            </p>
+                            <p class="opacity5 news-desc">
+
+                                2021年6月9-12日，第26届Sino-Dental中国国际口腔设备材料展览会成功举办。有方医疗受邀参会，带来全球尖端科技的Pirox牙科CBCT系统，万众期待、惊艳全场。有方医疗为到场的数万名专业观众，展示了一场异彩纷呈的科技盛宴，下面，我们一同来回顾现场的精彩瞬间。 有方展位人气爆棚 本次展会，有方派CT重...... </p>
+                            <p class="opacity3 news-date">
+                                2021年06月13日 </p>
+                        </div>
+                    </li>
+                    <!-- 10 -->
+                    <li id="post-233">
+                        <a class="news-thumb inline-block middle" style="background-image: url(../../public/img/newsCenter/news/news\ photo9.jpg);" href="/news/437.html" title="查看简而有信，方成一派 | 有方学术论坛走进杭州详细内容"></a>
+                        <div class="news-desc-wrap inline-block middle">
+                            <h6 class="ft24 ft-bold mb15 over-doit line10">
+                                <a href="/news/437.html" title="简而有信，方成一派 | 有方学术论坛走进杭州">简而有信，方成一派 | 有方学术论坛走进杭州</a></h6>
+                            <p class="news-tags"><span><a href="http://127.0.0.1:5500/YOFO/zhaoxueying/qiyezhuafang.html"
+                                        rel="tag">学术论坛</a></span><span><a
+                                        href="http://127.0.0.1:5500/YOFO/zhaoxueying/qiyezhuafang.html"
+                                        rel="tag">有方医疗</a></span><span><a
+                                        href="http://127.0.0.1:5500/YOFO/zhaoxueying/qiyezhuafang.html" rel="tag">杭州</a></span></p>
+                            <p class="opacity5 news-desc">
+                                2021年6月5日下午，有方派CT浙江签约答谢会暨有方学术论坛杭州站成功举办。本次大会共有近百名医师参加，现场盛况空前，反响热烈。 巅峰盛会，大咖云集。会议邀请了浙江大学口腔医学院原校长赵士芳教授出席，他给予了有方派CT高度的肯定和赞扬，通过有方派CT，看到了口腔CBCT的未来，高精的影像质量，超低的辐射剂量，各方面......
+                            </p>
+                            <p class="opacity3 news-date">
+                                2021年06月08日 </p>
+                        </div>
+                    </li>
+                    <!--  -->
+                    <div class="navigation clearfix">
+                        <div class="text-center">
+                            <a class='page_num page_yet current' href='/news'>1</a>
+                            <a class='page_num' href='/news/page2' title='第 2 页'>2</a>
+                            <a class='page_num' href='/news/page2' title='下一页'>下一页</a>
+                        </div>
+                    </div>
+                </ul>
+                <!--  -->
+                <div class="pages text-center pb50 pt20 hide">
+                    <a href="" class="nl-btn nl-btn-gray"><i class="ft-black">展开更多</i> <i
+                            class="iconfont icon-plus ft-black"></i></a>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+        <div class="m-show text-center">
+            <span class="back-top">返回顶部</span>
+        </div>
+        <!-- footer -->
+
+
+        <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+        <script src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+
+</html>

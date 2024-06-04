@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "iconfont";
+  /* Project id 3560918 */
+  src: url('iconfont.woff2?t=1659682347117') format('woff2'),
+    url('iconfont.woff?t=1659682347117') format('woff'),
+    url('iconfont.ttf?t=1659682347117') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon2:before {
+  content: "\e647";
+}
+
+.iconXinlixue:before {
+  content: "\e607";
+}
+
+.iconIcon:before {
+  content: "\e644";
+}
+
+.iconHunyinlianai:before {
+  content: "\e618";
+}
+
+.iconChengchang:before {
+  content: "\e61f";
+}
+
+.iconFushiQinzizhuangXianxing:before {
+  content: "\e610";
+}
+
+.iconLianaiyushou:before {
+  content: "\e67f";
+}
+
+.iconBiaoqianlanZhichang:before {
+  content: "\e7b0";
+}
+
+.iconAhezuowoshoujiaoliu04:before {
+  content: "\e903";
+}
+
+.iconHr:before {
+  content: "\e60a";
+}
+
+.iconXiangzuo:before {
+  content: "\e682";
+}
+
+.iconXiangyou:before {
+  content: "\e666";
+}
+
+.iconShequ:before {
+  content: "\e628";
+}
+
+.iconFenlei:before {
+  content: "\e62f";
+}
+
+.iconDiantai:before {
+  content: "\e636";
+}

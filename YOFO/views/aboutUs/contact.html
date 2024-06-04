@@ -1,0 +1,173 @@
+{{extend '../layout/layout.html'}}
+
+{{block "head"}}
+<link rel="stylesheet" href="../../public/css/xzg/contact.css" ; />
+<link rel="stylesheet" href="../../public/css/xzg/contact750.css" media="only screen and (max-width: 750px)" ; />
+<!-- <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=key8mt9o44EsKCnz3CTbYlAwTt1pVZl9"> -->
+<!-- </script> -->
+<script src="../../public/js/flexible.js"></script>
+{{/block}}
+
+{{block "content"}}
+<!-- 图片区域 -->
+<section class="phone">
+  <h3>企业简介</h3>
+  <p>盛德有邻 · 大方无隅</p>
+  <div id="tabs">
+    <div class="phonetabs">
+      <a href="/about">企业简介</a>
+      <a href="/milestone">发展历程</a>
+      <a href="/honor">资质荣誉</a>
+      <a href="/contact" class="blueborder">联系我们</a>
+      <a href="/joinus">加入有方</a>
+    </div>
+  </div>
+</section>
+<!-- 地图 -->
+<section class="maps">
+  <div class="mapmain">
+    <div class="maptitle">
+      <h3>中国·合肥</h3>
+      <p id="anhuihefei">
+        安徽省合肥市经济技术开发区紫石路1452号
+      </p>
+      <div class="ditu">
+        <a href="http://j.map.baidu.com/s/HR7HFb"><span
+            class="glyphicon glyphicon-map-marker text-primary"></span>地图</a>
+      </div>
+    </div>
+    <div class="mapbody">
+      <img src="../../public/img/aboutUs/contact/map.png" alt="" class="mapimg" />
+      <ul class="weicon">
+        <li><span class="glyphicon glyphicon-earphone"></span>
+          <div class="doubleline">
+            <h6>400-878-2358</h6>
+            <p>周一至周五 9:00~17:00</p>
+          </div>
+        </li>
+        <li class="icon2">
+          <span class="glyphicon glyphicon-send"></span>
+          <div class="doubleline">
+            <h6>400-878-2358</h6>
+            <p>周一至周五 9:00~17:00</p>
+          </div>
+        </li>
+        <li class="icon2">
+          <span class="glyphicon glyphicon-comment sapnwechat"></span>
+          <div class="doubleline"> <img src="../../public/img/aboutUs/contact/wechat.png" alt=""
+              style="width: 80px; height: 80px" />
+            <small>有方微信公众号</small>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 表单 -->
+<section class="tables" id="ask">
+  <div class="write">
+    <div class="tabletitle">
+      <h1>留言于此</h1>
+      <h4>若无法直接联系，欢迎在此留言，我们将尽快回复！</h4>
+    </div>
+    <div class="tablebody">
+      <!-- 1 -->
+      <form id="register_form">
+        <!-- 称呼 nickname-->
+        <div class="inputs">
+          <div class="form-group form-inline">
+            <label for="exampleInputName2 nickname">称呼
+            </label>
+            <input type="text" class="form-control input-lg callinput" id="nickname" name="nickname"
+              placeholder="E.g.John">
+          </div>
+        </div>
+        <!-- 2 邮箱email-->
+        <div class="inputs">
+          <div class="form-group  form-inline">
+            <label for="exampleInputName2">邮箱</label>
+            <input type="email" class="form-control input-lg callinput" id="email" name="email"
+              placeholder="E.g.John@doe.com">
+          </div>
+        </div>
+        <!-- 3 联系方式phonenumber-->
+        <div class="inputs">
+          <div class="form-group  form-inline">
+            <label for="exampleInputName2 phonenumber">联系方式</label>
+            <input type="text" class="form-control input-lg callinput" id="phonenumber" name="phonenumber"
+              placeholder="E.g 13000000000">
+          </div>
+        </div>
+        <!--4  工作单位job-->
+        <div class=" inputs">
+          <div class="form-group form-inline">
+            <label for="exampleInputName2 job">工作单位</label>
+            <input type="text" class="form-control input-lg callinput" id="job" name="job" placeholder="请输入你的工作单位">
+          </div>
+        </div>
+        <!--5 checkbox:选择框的样式-->
+        <div class="inputs">
+          <div class="form-group checktable">
+            <input type="checkbox" class="checkwo" /><label id="woxiang">&nbsp;&nbsp;&nbsp;我想预约产品体验 </label>
+          </div>
+        </div>
+        <!-- 6 留言信息-->
+        <div class="inputs leavenotebox">
+          <div class="form-group form-inline">
+            <label for="exampleInputName2" class="leavenotelabel">留言信息:
+              <textarea class="form-control callinput leavenote leaveword" rows="6" placeholder="请输入你的留言"
+                id="leaveword"></textarea></label>
+          </div>
+        </div>
+        <!-- 按钮 -->
+        <div class="endbtn"><button type="button" class="btn btn-lg" id="btn">提交</button></div>
+      </form>
+      <!-- END -->
+    </div>
+
+</section>
+{{/block}}
+
+
+{{block "script"}}
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/blueimp-md5/js/md5.js"></script>
+<script src="https://www.layuicdn.com/layui/layui.js"></script>
+<script>
+  //   //点击按钮提交表单 test
+  $("#btn").click(function () {
+    var formData = $("#register_form").serializeArray();
+    var textsize = $("#leaveword").val();
+    console.log(textsize, "dsdsd");
+    // console.log(formData,"ooooooooooooooooooooo表单");
+    var obj = {};
+    let textxx = {
+      name: "leaveword",
+      value: textsize
+    };
+    formData.push(textxx)
+    console.log(formData, "ooooooooooooooooooooo表单22222");
+    formData.forEach((item) => {
+      obj[item.name] = item.value;
+    });
+    console.log(obj, "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj");
+          $.ajax({
+              type: "POST",
+              url: "/contactme",
+              data: JSON.stringify(obj),
+              contentType: "application/json",
+              success: function (res) {
+              console.log(res,"redsss");
+              if (res.code == 200) {
+                // window.location.href = "http://localhost:8000/index"
+              }
+              else{
+                alert(res.message)
+              }
+            },
+          })
+          return false;
+  })
+// </script>
+{{/block}}

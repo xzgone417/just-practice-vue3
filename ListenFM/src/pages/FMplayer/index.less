@@ -1,0 +1,54 @@
+
+
+    .header{
+        width: 375px;
+        display:flex;
+        justify-content: center;
+        padding-top: 20px;
+        margin-bottom: 20px;  
+        font-size: 16px;
+        position: relative;
+        .back{
+            position: absolute;
+            font-size: 20px;
+            left: 30px;
+            top:5px;
+            margin-top: 20px;
+        }
+        .header123{
+            display: inline-block;
+            padding:6px;
+            font-size: 16px
+        }
+    };
+
+    // 背景图片
+    .FMmain{
+        width: 375px;
+        color:rgb(241, 236, 236);
+    }
+    .FMbody{
+        width: 100%;
+    }
+    .banbg{
+        width: 100%;/*宽度铺满屏幕*/
+        height: 100%;
+        // padding-top: 52.734%;/*图片高度除以宽度，得到此值*/
+        // background: url("test.jpg")center center no-repeat;/*两个center分别为水平和垂直方向的对齐方式*/
+        // background-size: 100%;/*背景水平铺满*/
+        filter:blur(20px);/*虚化值，越大越模糊*/
+        position: absolute;/*设置内容层绝对定位*/
+        z-index: -10;/*将内容至于上层*/
+        top:0;
+    }
+    .FMbody2{
+        // position: absolute;/*设置内容层绝对定位*/
+        width: 100%;
+        // text-align: center;
+        // z-index: 6;/*将内容至于上层*/
+        // margin-top: 6%;
+    }
+
+
+
+

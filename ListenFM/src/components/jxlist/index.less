@@ -1,0 +1,64 @@
+.jx {
+    background-color: #fff;
+    width: 375px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+
+        .title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+
+    }
+
+    .list {
+
+        width: 100%;
+
+        .content {
+            margin: 10px 0;
+
+            &>div {
+                padding: 0 10px;
+                display: flex;
+                margin-bottom: 10px;
+
+                .cover {
+                    display: inline-block;
+
+                    img {
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 5px;
+                    }
+                }
+
+                .info {
+                    padding-left: 16px;
+
+                    .speak {
+                        color: #666;
+                    }
+
+                    .xltit {
+                        line-height: 50px;
+                        width: 200px;
+                        height: 50px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
+        }
+    }
+}

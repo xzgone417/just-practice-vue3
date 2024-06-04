@@ -1,0 +1,273 @@
+.phone {
+    background-image: url("../../img/aboutUs/contact/phone.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 240px;
+    background-position: top;
+    height: 240px;
+    position: relative;
+  }
+  
+  .phone h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 0.6133rem;
+    left: 0.4rem;
+  }
+  
+  .phone p {
+    font-size: 18px;
+    color: #fff;
+    opacity: 0.6;
+    position: absolute;
+    top: 1.4933rem;
+    left: 0.4rem;
+  }
+  
+  .phone #tabs {
+    position: absolute;
+    bottom: -58px;
+    width: 10rem;
+    height: 58px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .phone .phonetabs {
+    width: 8rem;
+    margin: 0 auto;
+    height: 58px;
+  }
+  
+  .phone #tabs a {
+    color: #666;
+    font-size: 16px;
+    display: inline-block;
+    width: 100px;
+    height: 58px;
+    line-height: 58px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .phone #tabs .blueborder {
+    border-bottom: 2px solid blue;
+    color: #222;
+    font-weight: 700;
+  }
+  /* 地图 */
+  .maps {
+    margin-top: 80px;
+    padding-top: 60px;
+    padding-bottom: 15px;
+    background-color: #f7f8fa;
+  }
+
+  .maps .mapmain {
+    padding: 0px 40px 30px 40px;
+    width: 8rem;
+    box-sizing: border-box;
+    height: 500px;
+    background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+  }
+  .maps h3 {
+    font-size: 28px;
+    margin: 0px;
+    font-weight: 700;
+    display: none !important;
+  }
+
+  .maps p {
+    font-size: 16px;
+    color: rgb(5, 8, 39);
+    opacity: 0.5;
+  }
+  #anhuihefei{
+    display: none;
+  }
+  .maps .ditu {
+    font-size: 16px;
+    color: #c4c4c4;
+    height: 16px;
+    width: 49px;
+    padding: 10px 28px 10px 28px;
+    border: 1px solid #c4c4c4;
+    border-radius: 100px;
+    box-sizing: content-box;
+    line-height: 16px;
+    margin-top: 10px;
+    position: absolute;
+    top: 28px;
+    right: 40px;
+    display: none !important;
+  }
+
+  .maps .maptitle {
+    height: 66px;
+    display: none !important;
+  }
+  .maps .mapimg {
+    width: 600px;
+    height: 480px;
+    vertical-align:bottom;
+    display: none !important;
+  }
+
+  .maps ul{
+   position:absolute;
+   top: 30px;
+   left: 0px;
+  }
+  
+  .maps .doubleline{
+    display: block;
+    margin-left: 20px;
+  }
+  
+  li {
+    list-style: none;
+    margin-top: 21px;
+  }
+
+  .weicon li {
+    font-size: 30px;
+    color: #2362f6;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .maps h6 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 0;
+    color: #222;
+  }
+  .maps ul span{
+    position: relative;
+    top: -20px;
+    display: block;
+    margin-left: .2667rem;
+  }
+  .maps ul .sapnwechat{
+    position: relative;
+    top: -30px;
+  }
+  .maps .icon2 {
+    margin-top: 61px;
+  }
+
+  .maps small {
+    display: block;
+    font-size: 12px;
+    opacity: 0.5;
+    font-style: normal;
+    color: rgb(5, 8, 39);
+  }
+
+  /* 表单头*/
+  .tables {
+    padding-bottom: 60px;
+    background-color: #f7f8fa;
+  }
+  
+  .tables .write {
+    padding: 60px 20px 30px 20px;
+    width: 8rem;
+    box-sizing: border-box;
+    height: 881px;
+    background-color: #fff;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .tables h1 {
+    color: rgb(5, 8, 39);
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 0px;
+  }
+
+  .tables h4 {
+    margin-top: 0px;
+    color: #999;
+    font-size: 18px;
+  }
+
+  .tables .tabletitle {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  /* 表单体*/
+
+  .tables .tablebody {
+    text-align: left;
+  }
+  /* .tablebody{
+    font-size:.2667rem;
+  } */
+  .tables .inputs {
+    margin: auto;
+    margin-top: 16px;
+    width: 5.9733rem;
+    height: .6667rem;
+    line-height: .6667rem;
+  }
+
+  .tables .form-inline {
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding-left: 6px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tables .checktable{
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding-left: 6px;
+  }
+  /* biaoqian */
+  .tables label{
+    width: 1.3333rem;
+  }
+  .tables .callinput {
+    width: 4.5rem;
+    border: none;
+    background-color: #fff;
+    color: #c4c4c4;
+    box-shadow: none;
+  }
+.checktable .checkwo{
+ text-align: left;
+
+}
+.tablebody #woxiang{
+  width: 3rem;
+}
+  .tables .leavenote{
+    width: 5.9733rem;
+    height: 142px; 
+  }
+  .tables .leavenotebox{
+    width: 5.9733rem;
+    height: 142px; 
+  }
+  .tables .leavenotelabel{
+    position: relative;
+    top: 0;
+  
+  }
+.tables .endbtn{
+margin-top:38px ;
+margin-bottom: 60px;
+text-align: center;
+}
+.tables button{
+width: 228px;
+height:48px ;
+border-radius: 20px;
+background-color: #2362f6;
+color: #fff;
+}

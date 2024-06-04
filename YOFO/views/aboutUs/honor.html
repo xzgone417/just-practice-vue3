@@ -1,0 +1,115 @@
+{{extend '../layout/layout.html'}} {{block "head"}}
+<link rel="stylesheet" href="../../public/css/wss/honor.css" ; />
+<link rel="stylesheet" href="../../public/css/wss/swiper.min.css">
+<script src="../../public/js/flexible.js"></script>
+
+{{/block}} {{block "content"}}
+<div id="post-15" class="top-img" style="background-image: url(../../public/img/aboutUs/honor/honor1.jpg)">
+    <div class="B-box">
+        <div class="top-img-text">
+            <h3 class="top-img-text-one severe">资质与荣誉</h3>
+            <p class="ft18 top-img-text-two">硕果累累</p>
+        </div>
+    </div>
+</div>
+
+<!-- 接口 -->
+<section class="factory">
+    <div id="tabs">
+        <div class="factorytabs">
+            <a href="/about">企业简介</a>
+            <a href="/milestone">发展历程</a>
+            <a href="/honor" class="blueborder">资质荣誉</a>
+            <a href="/contact">联系我们</a>
+            <a href="/joinus">加入有方</a>
+        </div>
+    </div>
+</section>
+
+<!-- 专利数，重要荣誉 -->
+
+<div class="bgc-color interval">
+    <div class="B-box">
+        <ul class="ul-box li-left">
+            <li>
+                <div class="clearfix">
+                    <dl class="left">
+                        <dt class="ft42 severe color-blue">60+</dt>
+                        <dd class="ft24 severe">专利数</dd>
+                    </dl>
+                    <div class="right">
+                        <img src="../../public/img/aboutUs/honor/honor2.svg" alt="专利数">
+                    </div>
+                    <div class="details ft18 opacity5">
+                        公司拥有医疗CT原创核心技术，中美60多项专利，相关CT控制系统以及成像算法是整个产业链的技术核心，是打破我国现有CT技术升级瓶颈的关键节点。
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="clearfix">
+                    <dl class="left">
+                        <dt class="ft42 severe color-yellow">30+</dt>
+                        <dd class="ft24 severe">重要荣誉奖项</dd>
+                    </dl>
+                    <div class="right">
+                        <img src="../../public/img/aboutUs/honor/honor3.svg" alt="重要荣誉奖项">
+                    </div>
+                    <div class="details ft18 opacity5">
+                        公司成立以来，屡获殊荣，累计获得大小荣誉100多项，其中包含30多项重要荣誉奖项。
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+
+
+<!-- Swiper -->
+<div class="lb_bj">
+    <div class="swiper-container">
+        <div class="ptpb">
+            <h5 class="ft36 m-ft22 title severe">部分证书一览</h5>
+            <p class="ft18 m-ft11 title color-gray">
+                Qualifications and Honors
+            </p>
+        </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb7.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb8.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../../public/img/aboutUs/honor/honor_lb9.jpg" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Swiper JS -->
+        <script src="../../public/js/swiper.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
+    </div>
+</div>
+{{/block}}{{block "script"}}
+<script>
+    console.log("生效了")
+</script>
+{{/block}}

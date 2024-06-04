@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <title>Document</title>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/public/css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="top-menu-left col-md-2">
+          <a href="#">
+            <img src="/public/img/images/pirox/yofo.logo.png" alt="" />
+          </a>
+        </div>
+        <div class="top-menu-center col-md-7">
+          <ul>
+            <li class="mouth">
+              <a href="#"> 口腔颌面CT</a>
+            </li>
+
+            <li><a> 技术与创新 </a></li>
+            <li><a>临床案例</a></li>
+            <li>
+              <a class="youfo">关于有方</a>
+              <ul>
+                <li>企业简介</li>
+                <li>发展历程</li>
+                <li>资质与荣誉</li>
+                <li>加入有方</li>
+                <li>联系我们</li>
+              </ul>
+            </li>
+            <li><a>资讯中心</a></li>
+            <li><a>服务与支持</a></li>
+          </ul>
+        </div>
+        <div class="top-menu-right col-md-3">
+          <span class="iconfont">&#xe774;</span>
+          <span class="contact">联系我们</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="top-banner">
+          <p>加入有方</p>
+          <p>在这里，成就更好的自己！</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="top-nav">
+          <ul>
+            <li><a href="#">企业简介</a></li>
+            <li><a href="#">发展历程</a></li>
+            <li><a href="#">资质荣誉</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="/joinus">加入有方</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <aside>
+          <div class="left col-md-3">
+            <p>职位筛选</p>
+            <p>职位类别</p>
+            <button class="btn1" type="submit">全部职位</button>
+            <div>
+              <input type="submit" class="btn btn-default" value="其他类" />
+              <input type="submit" class="btn btn-default" value="市场类" />
+            </div>
+            <div>
+              <input type="submit" class="btn btn-default" value="其他类" />
+              <input type="submit" class="btn btn-default" value="市场类" />
+            </div>
+            <div>
+              <input type="submit" class="btn btn-default" value="其他类" />
+              <input type="submit" class="btn btn-default" value="市场类" />
+            </div>
+            <p>所在城市</p>
+            <div>
+              <input type="submit" class="btn btn-default" value="其他类" />
+              <input type="submit" class="btn btn-default" value="市场类" />
+            </div>
+          </div>
+          <div class="right col-md-9">
+            <div class="row">
+              <!-- <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> -->
+           
+                <div class="pan">
+                  {{each person}}
+                <div class="panel panel-default" id="panel">
+                  <div class="panel-heading" role="tab"    id="{{$value.heading}}" >
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="{{$value.collapse}}"
+                        aria-expanded="false"
+                        aria-controls="{{$value.control}}"
+                      >
+                        <span class="job">{{$value.title1}}</span>
+                        <p class="icon">
+                          <span class="iconfont">&#xe727; 市场类</span>
+                          <span class="iconfont">&#xe61c; 合肥市</span>
+                        </p>
+
+                        <p class="drop">
+                          <span class="iconfont">&#xe69a;</span>
+                        </p>
+                      </a>
+                    </h4>
+                  </div>
+               
+                  <div
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    id="{{$value.control}}"
+                    aria-labelledby="headingOne"
+                  >
+                
+                    <div class="panel-body">
+                    <div class="panel-content">
+             <div class="panel-desc">
+                        <h5>{{$value.title2}}</h5>
+                      <p>{{$value.description1}}</p>
+                      <p>{{$value.description2}}</p>
+                      <p>{{$value.description3}}</p>
+                      <p>{{$value.description4}}</p>
+                    
+                      </div>
+                      <div class="panel-exp">
+                        <h5>{{$value.title3}}</h5>
+                        <p>{{$value.description5}}</p>
+                         <p>{{$value.description6}}</p>
+                        <p>{{$value.description7}}</p>
+                        <p>{{$value.description8}}</p>
+                        <p>{{$value.description9}}</p>
+                      </div>
+                      <div class="panel-contact">
+                        <span>{{$value.title4}}</span>
+                        <span>hr@yofomedical.com</span>
+                        <span><a href="https://www.yofomedical.com/joinus/quyuxiaoshoujingli"><button>在线申请</button></a></span>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+                  {{/each}}
+              </div>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- <div class="footer2">
+      <div class="container">
+        <div class="row">
+          <div class="foot">
+            <div class="left col-md-3"><img src="/public/img/images/pirox/logo2 (1).svg" alt=""></div>
+            <div class="center col-md-6">
+              <ul>
+                <li>
+                  <h3>口腔颌面CT</h3>
+                  <p>PIROX</p>
+                  <p>Dubhewer</p>
+                  <p>Autodon</p>
+                </li>
+                <li>
+                  <h3>技术与创新</h3>
+                  <p>技术与创新</p>
+                </li>
+                <li>
+                  <h3>临床案例</h3>
+                  <p>临床案例</p>
+                </li>
+                <li>
+                  <h3>关于有方</h3>
+                  <p>企业简介</p>
+                  <p>发展历程</p>
+                  <p>荣誉与资质</p>
+                  <p>联系我们</p>
+                  <p>加入有方</p>
+                </li>
+                <li>
+                  <h3>资讯中心</h3>
+                  <p>新闻动态</p>
+                 <p>展会信息</p>
+                </li>
+                <li>
+                  <h3>服务与支持</h3>
+                  <p>服务与支持</p>
+                </li>
+              </ul>
+            </div>
+            <div class="right col-md-3">
+              
+              <h3>微信公众号</h3>
+              <img src="/public/img/images/pirox/yofo-qr.png" alt="">
+            </div>
+          <div class="bottom">
+            <hr>
+            <span>&copy;皖ICP备17020699号-1 有方医疗 All Rights Reserved. 版权所有：有方医疗 </span>
+            <span> 语言：简体中文</span>
+          </div>
+          </div>
+        </div>
+       
+      </div>
+      
+          </div> -->
+       
+  </body>
+</html>
